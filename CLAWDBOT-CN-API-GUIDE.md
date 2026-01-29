@@ -86,8 +86,8 @@ cp ~/.clawdbot/clawdbot.json ~/.clawdbot/clawdbot.json.backup
 
 | 服务商 | 控制台地址 | API Key 获取位置 |
 |--------|-----------|------------------|
-| MiniMax | https://api.minimaxi.com | 控制台 → API Keys |
-| 智谱 AI | https://open.bigmodel.cn | 控制台 → API Keys |
+| MiniMax | https://www.minimaxi.com | 控制台 → API Keys |
+| 智谱 AI | https://bigmodel.cn | 控制台 → API Keys |
 
 ### 2.3 编辑配置文件
 
@@ -208,7 +208,7 @@ export MINIMAX_CN_API_KEY="your_api_key_here"
               "cacheRead": 0,
               "cacheWrite": 0
             },
-            "contextWindow": 128000,
+            "contextWindow": 200000,
             "maxTokens": 8192
           }
         ]
@@ -252,7 +252,7 @@ export MINIMAX_CN_API_KEY="your_api_key_here"
             "name": "GLM-4.7",
             "reasoning": true,
             "input": ["text"],
-            "contextWindow": 128000,
+            "contextWindow": 200000,
             "maxTokens": 8192
           }
         ]
@@ -338,7 +338,7 @@ minimax-cn/MiniMax-M2.1                    text       200k     no    yes   defau
 
 ```
 Model                                      Input      Ctx      Local Auth  Tags
-zhipu-cn/glm-4.7                             text       128k     no    yes   configured
+zhipu-cn/glm-4.7                             text       200k     no    yes   configured
 ```
 
 ### 4.3 检查 Gateway 状态
@@ -548,13 +548,13 @@ HTTP 401 authentication_error: login fail
 | 服务商 | 模型 ID | 上下文窗口 | 特性 |
 |--------|---------|-----------|------|
 | MiniMax | MiniMax-M2.1 | 200k | 支持推理 |
-| 智谱 | glm-4.7 | 128k | 支持推理 |
+| 智谱 | glm-4.7 | 200k | 支持推理 |
 
 ### 相关链接
 
 - [Clawdbot 官方文档](https://docs.clawd.bot)
-- [MiniMax API 文档](https://api.minimaxi.com)
-- [智谱 AI 开放平台](https://open.bigmodel.cn)
+- [MiniMax 官网](https://www.minimaxi.com)
+- [智谱 AI 官网](https://bigmodel.cn)
 - [Clawdbot GitHub](https://github.com/clawdbot/clawdbot)
 
 ---
