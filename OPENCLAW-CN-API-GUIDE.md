@@ -183,7 +183,7 @@ export MINIMAX_CN_API_KEY="your_api_key_here"
 
 智谱 AI（Zhipu）提供 GLM 系列模型，支持编程和对话任务。
 
-**API 端点**: `https://open.bigmodel.cn/api/coding/paas/v4`
+**API 端点**: `https://open.bigmodel.cn/api/anthropic`
 
 **完整配置示例**:
 
@@ -193,7 +193,7 @@ export MINIMAX_CN_API_KEY="your_api_key_here"
     "mode": "merge",
     "providers": {
       "zhipu-cn": {
-        "baseUrl": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "baseUrl": "https://open.bigmodel.cn/api/anthropic",
         "apiKey": "YOUR_ZHIPU_API_KEY_HERE",
         "api": "anthropic-messages",
         "models": [
@@ -243,7 +243,7 @@ export MINIMAX_CN_API_KEY="your_api_key_here"
         ]
       },
       "zhipu-cn": {
-        "baseUrl": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "baseUrl": "https://open.bigmodel.cn/api/anthropic",
         "apiKey": "YOUR_ZHIPU_API_KEY",
         "api": "anthropic-messages",
         "models": [
@@ -377,7 +377,7 @@ curl -X POST "https://api.minimaxi.com/anthropic/v1/messages" \
 **智谱**:
 
 ```bash
-curl -X POST "https://openbigmodel.cn/api/coding/paas/v4/chat/completions" \
+curl -X POST "https://open.bigmodel.cn/api/anthropic/v1/messages" \
   -H "Authorization: Bearer YOUR_ZHIPU_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
